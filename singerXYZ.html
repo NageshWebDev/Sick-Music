@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Music Player</title>
+
+  <script src="https://kit.fontawesome.com/0100459f57.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="css-xyz\stylesXYZ.css">
+</head>
+
+<body>
+  <main>
+    <!--     Navbar      -->
+    <nav class="navbar navbar-expand-lg  navbar-dark">
+      <div class="container-fluid">
+        <a id="sick-music-logo" class="navbar-brand ms-lg-5" href="#">
+          <p><span>S</span>ick <span>M</span>usic</p>
+        </a>
+        <!-- for hamburger menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- x-x-x-x-x-x -->
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto ms-lg-auto mb-lg-0">
+            <li class="nav-item ms-lg-5 me-lg-5">
+              <a class="nav-link" href="index.html"><button type="button" class="btn btn-outline-success">Back</button></a>
+            </li>
+            <li class="nav-item ms-lg-5 me-lg-5">
+              <a class="nav-link" href="#popular-artist">Popular Artist</a>
+            </li>
+
+            <li class="nav-item ms-lg-5 me-lg-5">
+              <a class="nav-link" href="#popular-artist">Singer-XYZ playlist</a>
+            </li>
+
+            <li class="nav-item dropdown ms-lg-5 me-lg-5">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                Note from developer
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#latest-release">Currently all the popular artist, <br> direct the user to the same page, br
+                    i.e. "singerXYZ" </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+
+    <!--     Latest Release     -->
+
+    <section id="latest-release">
+
+      <div class="grid-item-1">
+        <p> <span>S</span>inger <span>XYZ</span></p>
+      </div>
+
+      <div class="grid-item-2">
+        <div class="fi-1">
+          <img src="CSS/pics/aw.png" alt="">
+        </div>
+        <div class="fi-2">
+          <h1>Singer-XYZ <span>Follower : 65M </span> </h1>
+          <br><br><br>
+          <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+            specimen book."</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="queue-box">
+      <p> <span>S</span>inger <span>XYZ</span> &nbsp <span>P</span>laylist</p>
+      <a href="#pop-up-queue-box-msg"> <i class="fa-solid fa-circle-info fa-2xl"></i> </a>
+      <div id="pop-up-queue-box-msg">
+        <a href="#queue-box"><i class="fa-solid fa-square-xmark fa-2xl"></i></a>
+        <h3> <span>N</span>ote <span>F</span>rom <span>D</span>eveloper</h3>
+        <p>In order to reduce the code bulkiness, developer used 'IMG' instead of functional audio player, top-most is functional. Java-script knowledge is required for more flexibility.</p>
+      </div>
+
+      <div class="queue-flexbox-container">
+
+        <div id="queue-first-song" class="queue-gridbox-container" title="I am first in Queue">
+
+          <div class="queue-grid-item-1">
+            <img src="CSS\pics\queue\panda.png">
+          </div>
+
+          <div class="queue-grid-item-2">
+            <p> Designer Panda </p>
+          </div>
+
+          <div class="queue-grid-item-3">
+            <audio class="audio-player" controls>
+              <source src="CSS\music\queue\panda.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+
+          <div class="queue-grid-item-4">
+            <i id="btn-heart" class="fa-solid fa-heart fa-2xl"></i>
+          </div>
+
+        </div>
+
+        <div class="queue-demo-pic">
+          <img src="css-xyz\pics\queue-pic.png">
+        </div>
+
+        <div class="queue-demo-pic">
+          <img src="css-xyz\pics\queue-pic.png">
+        </div>
+
+        <div class="queue-demo-pic">
+          <img src="css-xyz\pics\queue-pic.png">
+        </div>
+
+        <div class="queue-demo-pic">
+          <img src="css-xyz\pics\queue-pic.png">
+        </div>
+
+        <div class="queue-demo-pic">
+          <img src="css-xyz\pics\queue-pic.png">
+        </div>
+
+        <div class="queue-demo-pic">
+          <img src="css-xyz\pics\queue-pic.png">
+        </div>
+
+        <div class="queue-demo-pic">
+          <img src="css-xyz\pics\queue-pic.png">
+        </div>
+
+        <div class="queue-demo-pic">
+          <img src="css-xyz\pics\queue-pic.png">
+        </div>
+
+        <div class="queue-demo-pic">
+          <img src="css-xyz\pics\queue-pic.png">
+        </div>
+
+        <div class="queue-demo-pic">
+          <img src="css-xyz\pics\queue-pic.png">
+        </div>
+
+        <div class="queue-demo-pic">
+          <img src="css-xyz\pics\queue-pic.png">
+        </div>
+
+        <div class="queue-demo-pic">
+          <img src="css-xyz\pics\queue-pic.png">
+        </div>
+
+        <div class="queue-demo-pic">
+          <img src="css-xyz\pics\queue-pic.png">
+        </div>
+
+        <div class="queue-demo-pic">
+          <img src="css-xyz\pics\queue-pic.png">
+        </div>
+
+        <div class="queue-demo-pic">
+          <img src="css-xyz\pics\queue-pic.png">
+        </div>
+
+        <div class="queue-demo-pic">
+          <img src="css-xyz\pics\queue-pic.png">
+        </div>
+
+        <div class="queue-demo-pic">
+          <img src="css-xyz\pics\queue-pic.png">
+        </div>
+
+        <div class="queue-demo-pic">
+          <img src="css-xyz\pics\queue-pic.png">
+        </div>
+
+        <div class="queue-demo-pic">
+          <img src="css-xyz\pics\queue-pic.png">
+        </div>
+
+        <div class="queue-demo-pic">
+          <img src="css-xyz\pics\queue-pic.png">
+        </div>
+
+        <div class="queue-demo-pic">
+          <img src="css-xyz\pics\queue-pic.png">
+        </div>
+
+        <div class="queue-demo-pic">
+          <img src="css-xyz\pics\queue-pic.png">
+        </div>
+
+        <div id="queue-last-song" class="queue-demo-pic">
+          <img src="css-xyz\pics\queue-pic.png" title="I am last in Queue">
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section id="popular-artist">
+
+      <button class="btn-popular-artist" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-popular-artist">
+        <p> <span>P</span>opular &nbsp<span>A</span>rtist</p>
+      </button>
+
+      <div class="collapse mt-3" id="collapse-popular-artist">
+        <section class="popular-artist-box">
+
+          <div>
+            <a href="#Eminem-1"><img src="CSS/pics/3.png" alt=""></a>
+            <a href="#Eminem-1">EMINEM</a>
+          </div>
+
+          <div>
+            <a href="#"><img src="CSS/pics/4.png" alt=""></a>
+            <a href="#">AKON</a>
+          </div>
+
+          <div>
+            <a href="#"><img src="CSS/pics/5.png" alt=""></a>
+            <a href="#">IMAGINE DRAGON</a>
+          </div>
+
+          <div>
+            <a href="#"><img src="CSS/pics/6.png" alt=""></a>
+            <a href="#">COLD PLAY</a>
+          </div>
+
+          <div>
+            <a href="#"><img src="CSS/pics/7.png" alt=""></a>
+            <a href="#">SIA</a>
+          </div>
+
+          <div>
+            <a href="#"><img src="CSS/pics/8.png" alt=""></a>
+            <a href="#">T-PAIN</a>
+          </div>
+
+          <div>
+            <a href="#"><img src="CSS/pics/9.png" alt=""></a>
+            <a href="#">SNOOP DOGG</a>
+          </div>
+
+          <div>
+            <a href="#"><img src="CSS/pics/10.png" alt=""></a>
+            <a href="#">SHAKIRA</a>
+          </div>
+
+          <div>
+            <a href="#"><img src="CSS/pics/11.png" alt=""></a>
+            <a href="#">PITBULL</a>
+          </div>
+
+          <div>
+            <a href="#"><img src="CSS/pics/12.png" alt=""></a>
+            <a href="#">KATY PERRY</a>
+          </div>
+
+          <div>
+            <a href="#"><img src="CSS/pics/13.png" alt=""></a>
+            <a href="#">RIHANNA</a>
+          </div>
+
+          <div>
+            <a href="#"><img src="CSS/pics/14.png" alt=""></a>
+            <a href="#">TAYLOR SHIFT</a>
+          </div>
+
+        </section>
+      </div>
+
+    </section>
+
+
+
+
+
+
+    <section class="side-navbar-sn">
+
+      <div id="g-t-i" class="greater-than-icon">
+        <a href="#side-navbar-items-sn "><i class="fa-solid fa-greater-than fa-2xl"></i>
+      </div>
+
+      <div id="side-navbar-items-sn">
+        <a class="Hide-and-seek-pc" href="#">Home</a>
+        <a class="Hide-and-seek-pc" href="#popular-artist">Popular Artist</a>
+        <a class="Hide-and-seek-pc" href="#queue-box">Singer-XYZ Playlist</a>
+        <a class="Hide-and-seek-mb" href="#queue-first-song">Top</a>
+        <a class="Hide-and-seek-mb" href="#queue-last-song">Bottom</a>
+        <a class="Hide-and-seek-x" href="#g-t-i"><i class="fa-solid fa-square-xmark fa-sm"></i></a>
+      </div>
+
+    </section>
+
+    <footer id="index-footer">
+
+      <div class="grid-item-if-1">
+        <a href="#"><button type="button" class="footer-btn btn btn-outline-success"><i class="fa-brands fa-apple fa-2xl"></i> &nbsp Download</button></a> <br> <br>
+        <a href="#"><button type="button" class="footer-btn btn btn-outline-success"><i class="fa-brands fa-google-play fa-xl"></i> &nbsp Download</button></a>
+      </div>
+
+
+      <div class="grid-item-if-2">
+        <div id="footer-logo-animation">
+          <p id="big-p"> <span>S</span>ick <span>M</span>usic </p>
+        </div>
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+          specimen book.</p>
+      </div>
+
+      <div class="grid-item-if-3">
+        <p class="footer-link-1"> <strong> © 2022 Sick Music.</strong></p>
+        <p class="footer-link-2"> <strong>All rights reserved.</strong></p>
+      </div>
+
+
+    </footer>
+
+    <section id="hide-me">
+
+      <div id="Alan-Walker-Fade">
+        <audio class="audio-player" controls>
+          <source src="CSS\music\Alan-Walker-Fade.mp3" type="audio/mpeg">
+        </audio>
+        <a href="#latest-release"><i class="fa-solid fa-square-xmark fa-2xl"></i></a>
+      </div>
+
+
+      <div id="Hymn-for-the-Weekend">
+        <audio class="audio-player" controls>
+          <source src="CSS\music\Hymn-for-the-Weekend.mp3" type="audio/mpeg">
+        </audio>
+        <a href="#latest-release"><i class="fa-solid fa-square-xmark fa-2xl"></i></a>
+      </div>
+
+      <div id="Imagine-Dragons-Demons">
+        <audio class="audio-player" controls>
+          <source src="CSS\music\Imagine-Dragons-Demons.mp3" type="audio/mpeg">
+        </audio>
+        <a href="#latest-release"><i class="fa-solid fa-square-xmark fa-2xl"></i></a>
+      </div>
+
+      <div id="Marshmello-Alone">
+        <audio class="audio-player" controls>
+          <source src="CSS\music\Marshmello-Alone.mp3" type="audio/mpeg">
+        </audio>
+        <a href="#latest-release"><i class="fa-solid fa-square-xmark fa-2xl"></i></a>
+      </div>
+
+      <div id="Eminem-ES">
+        <audio class="audio-player" controls>
+          <source src="CSS\music\ES\Eminem-1.mp3" type="audio/mpeg">
+        </audio>
+        <a href="#latest-english"><i class="fa-solid fa-square-xmark fa-2xl"></i></a>
+      </div>
+
+      <div id="happy">
+        <audio class="audio-player" controls>
+          <source src="CSS\music\Top-slider\happy.mp3" type="audio/mpeg">
+        </audio>
+        <a href="#slider-1"><i class="fa-solid fa-square-xmark fa-2xl"></i></a>
+      </div>
+
+      <div id="beats">
+        <audio class="audio-player" controls>
+          <source src="CSS\music\Top-slider\beats.mp3" type="audio/mpeg">
+        </audio>
+        <a href="#slider-1"><i class="fa-solid fa-square-xmark fa-2xl"></i></a>
+      </div>
+
+      <div id="sad">
+        <audio class="audio-player" controls>
+          <source src="CSS\music\Top-slider\sad.mp3" type="audio/mpeg">
+        </audio>
+        <a href="#slider-1"><i class="fa-solid fa-square-xmark fa-2xl"></i></a>
+      </div>
+
+      <div id="edm">
+        <audio class="audio-player" controls>
+          <source src="CSS\music\Top-slider\edm.mp3" type="audio/mpeg">
+        </audio>
+        <a href="#slider-1"><i class="fa-solid fa-square-xmark fa-2xl"></i></a>
+      </div>
+
+      <div id="dark">
+        <audio class="audio-player" controls>
+          <source src="CSS\music\Top-slider\dark.mp3" type="audio/mpeg">
+        </audio>
+        <a href="#slider-1"><i class="fa-solid fa-square-xmark fa-2xl"></i></a>
+      </div>
+
+      <div id="rock">
+        <audio class="audio-player" controls>
+          <source src="CSS\music\Top-slider\rock.mp3" type="audio/mpeg">
+        </audio>
+        <a href="#slider-1"><i class="fa-solid fa-square-xmark fa-2xl"></i></a>
+      </div>
+
+      <div id="romantic">
+        <audio class="audio-player" controls>
+          <source src="CSS\music\Top-slider\romantic.mp3" type="audio/mpeg">
+        </audio>
+        <a href="#slider-1"><i class="fa-solid fa-square-xmark fa-2xl"></i></a>
+      </div>
+
+      <div id="instrumental">
+        <audio class="audio-player" controls>
+          <source src="CSS\music\Top-slider\instrumental.mp3" type="audio/mpeg">
+        </audio>
+        <a href="#slider-1"><i class="fa-solid fa-square-xmark fa-2xl"></i></a>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+
+</html>
